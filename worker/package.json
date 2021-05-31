@@ -1,0 +1,17 @@
+{
+  "name": "worker",
+  "version": "1.0.0",
+  "description": "Node Worker",
+  "dependencies": {
+    "redis": "2.8.0"
+  },
+  "devDependencies": {
+    "nodemon": "1.18.3"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon"
+  },
+  "author": "David Chow",
+  "license": "ISC"
+}
