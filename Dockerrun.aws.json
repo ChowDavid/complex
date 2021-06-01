@@ -5,25 +5,25 @@
       "name": "client",
       "image": "davidchow/complex-client",
       "hostname": "client",
-      "memory": 1,
+      "memory": 4,
       "essential": false
     },{
       "name": "server",
       "image": "davidchow/complex-api",
       "hostname": "api",
-      "memory": 1,
+      "memory": 4,
       "essential": false
     },{
       "name": "worker",
       "image": "davidchow/complex-worker",
       "hostname": "worker",
-      "memory": 1,
+      "memory": 4,
       "essential": false
     },{
       "name": "nginx",
       "image": "davidchow/complex-nginx",
       "hostname": "nginx",
-      "memory": 1,
+      "memory": 4,
       "essential": true,
       "portMappings" : [
         {
