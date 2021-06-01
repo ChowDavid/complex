@@ -14,7 +14,6 @@ after_success:
   - docker build -t davidchow/complex-api ./api
   - docker build -t davidchow/complex-nginx ./nginx
   - docker build -t davidchow/complex-worker ./worker
-  - echo $DOCKER_ID
   - echo $DOCKER_PASSWORD | docker login -u $DOCKER_ID --password-stdin
   - docker push davidchow/complex-client
   - docker push davidchow/complex-api
