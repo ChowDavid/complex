@@ -11,19 +11,19 @@
       "name": "server",
       "image": "davidchow/complex-api",
       "hostname": "api",
-      "memory": 4,
+      "memory": 8,
       "essential": false
     },{
       "name": "worker",
       "image": "davidchow/complex-worker",
       "hostname": "worker",
-      "memory": 4,
+      "memory": 8,
       "essential": false
     },{
       "name": "nginx",
       "image": "davidchow/complex-nginx",
       "hostname": "nginx",
-      "memory": 4,
+      "memory": 8,
       "essential": true,
       "portMappings" : [
         {
