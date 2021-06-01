@@ -1,0 +1,33 @@
+{
+  "AWSEBDockerrunVersion": 2,
+  "containerDefinitions": [
+    {
+      "name": "client",
+      "image": "davidchow/complex-client",
+      "hostname": "client",
+      "essential": false
+    },{
+      "name": "server",
+      "image": "davidchow/complex-api",
+      "hostname": "api",
+      "essential": false
+    },{
+      "name": "worker",
+      "image": "davidchow/complex-worker",
+      "hostname": "worker",
+      "essential": false
+    },{
+      "name": "nginx",
+      "image": "davidchow/complex-nginx",
+      "hostname": "nginx",
+      "essential": true,
+      "portMappings" : [
+        {
+          "hostPort": 80,
+          "containerPort": 80
+        }
+      ],
+      "links": ["server","client"]
+    }
+  ]
+}
