@@ -6,13 +6,25 @@
       "image": "davidchow/complex-client",
       "hostname": "client",
       "memory": 16,
-      "essential": false
+      "essential": false,
+      "portMappings" : [
+        {
+          "hostPort": 3000,
+          "containerPort": 3000
+        }
+      ]
     },{
       "name": "api",
       "image": "davidchow/complex-api",
       "hostname": "api",
       "memory": 16,
-      "essential": false
+      "essential": false,
+      "portMappings" : [
+        {
+          "hostPort": 5000,
+          "containerPort": 5000
+        }
+      ]
     },{
       "name": "worker",
       "image": "davidchow/complex-worker",
