@@ -12,7 +12,8 @@
       "image": "davidchow/complex-api",
       "hostname": "api",
       "memory": 128,
-      "essential": false
+      "essential": false,
+      "reset": "always"
     },{
       "name": "worker",
       "image": "davidchow/complex-worker",
