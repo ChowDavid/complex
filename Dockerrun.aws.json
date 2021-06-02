@@ -23,7 +23,7 @@
       "name": "nginx",
       "image": "davidchow/complex-nginx",
       "hostname": "nginx",
-      "memory": 16,
+      "memory": 128,
       "essential": true,
       "portMappings" : [
         {
